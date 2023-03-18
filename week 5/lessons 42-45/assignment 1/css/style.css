@@ -1,0 +1,26 @@
+.one{
+    background-color: #eee;
+    padding: 20px;
+    margin: 70px;
+    width: 600px;
+    height: 400px;
+    text-align: center;
+    font-size: 20px;
+    transition-duration: 0.5s;
+}
+.two{
+    background-color: #ccc;
+    height: 20px;
+    text-align: center;
+    margin: 10px;
+    font-size: 20px;
+    padding: 20px;
+    transition-duration:0.5s ;
+    transition-delay: 0.5s;
+}
+.one:hover{
+    margin-top: 30px;
+}
+.one:hover .two{
+    margin-top: 30px;
+}

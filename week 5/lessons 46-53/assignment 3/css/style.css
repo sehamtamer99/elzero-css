@@ -1,0 +1,41 @@
+.grandparent .parent{
+    width: 600px;
+    height: 300px;
+    background-color: #eee;
+    margin: 20px auto;
+    padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+}
+.grandparent .parent{
+    justify-content: space-between;
+}
+.grandparent .parent div{
+    background-color: #607d8b;
+    color: white;
+    width: calc(80% / 3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.grandparent .parent .one{
+    order: 6;
+    align-self: flex-end;
+}
+.grandparent.parent .two{
+    order: 5;
+}
+.grandparent .parent .three{
+    order: 2;
+    align-self: flex-start;
+}
+.grandparent .parent .four{
+    order: 3;
+}
+.grandparent .parent .five{
+    order: 4;
+}
+.grandparent .parent .six{
+    order: 1;
+}
