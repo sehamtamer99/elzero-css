@@ -1,0 +1,9 @@
+*{
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    font-weight: bold;
+}
+.parent div:not(.no-need) div:nth-last-of-type(2) {
+    color: red;
+}

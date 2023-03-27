@@ -1,0 +1,38 @@
+.grand-parent{
+    perspective: 400px;
+}
+.parent{
+    height: 200px;
+    width: 200px;
+    margin: 20px auto;
+    position: relative;
+    font-size: 30px;
+    color: white;
+    transform-style: preserve-3d;
+    transition: 1s;
+}
+.parent::before{
+    content: "Front";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #fa3664;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parent::after{
+    content: "Back";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #1692fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    transform: rotatex(180deg);
+}
+.parent:hover{
+    transform: rotatex(-180deg);
+}

@@ -1,0 +1,9 @@
+*{
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    font-weight: bold;
+}
+.parent :not(h3, :first-child, :last-child){
+    color: red;
+}
